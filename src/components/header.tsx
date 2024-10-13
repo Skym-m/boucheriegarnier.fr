@@ -1,28 +1,46 @@
-const header = () => {
+"use client" // Ceci doit être la première ligne du fichier
 
-    return (
-        <header>
-        <nav className="nav">
-            <ul id="list" className="flex items-center justify-center fixed z-50 w-full h-16 bg-black text-white">
-                <li>
-                    <a href="#welcome">ACCUEIL</a>
-                </li>
-                <li>
-                    <a href="#about">LA BOUCHERIE</a>
-                </li>
-                <li>
-                    <a href="#location">NOUS TROUVER</a>
-                </li>
-                <li>
-                    <a href="#charcuterie">PRODUITS</a>
-                </li>
-                <li>
-                    <a href="#actualites">ACTUALITES</a>
-                </li>
-            </ul>
-        </nav>
+import { useEffect, useState } from 'react'
+import { client } from '../sanity/lib/client' // Assure-toi que ce chemin est correct
+
+const Header = () => {
+  const [bannerData, setBannerData] = useState<any>(null)
+
+  useEffect(() => {
+    const fetchBannerData = async () => {
+      const query = `*[_type == "banner"][0]`
+      const data = await client.fetch(query)
+      setBannerData(data)
+    }
+
+    fetchBannerData()
+  }, [])
+
+  if (!bannerData) return <p>Chargement de la bannière...</p>
+
+  const eventDate = new Date(bannerData.eventDate).toLocaleString()
+
+  return (
+    <header>
+      <nav className="nav">
+        <ul id="list" className="flex items-center justify-center fixed z-50 w-full h-16 bg-black text-white">
+          <li><a href="/">ACCUEIL</a></li>
+          <li><a href="/boucherie">BOUCHERIE</a></li>
+          <li><a href="/charcuterie">CHARCUTERIE</a></li>
+          <li><a href="/traiteur">TRAITEUR</a></li>
+          <li><a href="/epicerie">EPICERIE</a></li>
+          <li><a href="/creations">NOS CREATIONS</a></li>
+          <li><a href="/articles">ARTICLES</a></li>
+        </ul>
+      </nav>
+
+      <div className="banner">
+        <h1>{bannerData.text}</h1>
+        <p>{bannerData.location}</p>
+        <p>{eventDate}</p>
+      </div>
     </header>
-    )
+  )
 }
 
-export default header
+export default Header
