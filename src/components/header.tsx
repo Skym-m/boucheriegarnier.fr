@@ -5,24 +5,41 @@ import { client } from '../sanity/lib/client' // Assure-toi que ce chemin est co
 
 const Header = () => {
   const [bannerData, setBannerData] = useState<any>(null)
+  const [loading, setLoading] = useState(true) // État pour suivre le chargement des données
+  const [isSticky, setIsSticky] = useState(false) // État pour gérer le sticky
 
   useEffect(() => {
     const fetchBannerData = async () => {
       const query = `*[_type == "banner"][0]`
       const data = await client.fetch(query)
       setBannerData(data)
+      setLoading(false) // Met à jour l'état de chargement une fois les données récupérées
     }
 
     fetchBannerData()
+
+    // Gérer le scroll pour rendre la navbar sticky
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsSticky(true)
+      } else {
+        setIsSticky(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    
+    // Nettoyage de l'écouteur d'événements
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
   }, [])
 
-  if (!bannerData) return <p>Chargement de la bannière...</p>
-
-  const eventDate = new Date(bannerData.eventDate).toLocaleString()
+  const eventDate = bannerData ? new Date(bannerData.eventDate).toLocaleString() : null
 
   return (
     <header>
-      <nav className="nav">
+      <nav className={`nav ${isSticky ? 'sticky' : ''}`}>
         <ul id="list">
           <li><a href="/">ACCUEIL</a></li>
           <li><a href="/boucherie">BOUCHERIE</a></li>
@@ -34,11 +51,18 @@ const Header = () => {
         </ul>
       </nav>
 
-      <div className="banner">
-        <h1>{bannerData.text}</h1>
-        <p>{bannerData.location}</p>
-        <p>{eventDate}</p>
-      </div>
+      {/* Message de chargement si les données de la bannière ne sont pas encore disponibles */}
+      {loading ? (
+        <p>Chargement de la bannière...</p>
+      ) : (
+        bannerData && (
+          <div className="banner">
+            <h1>{bannerData.text}</h1>
+            <p>{bannerData.location}</p>
+            <p>{eventDate}</p>
+          </div>
+        )
+      )}
     </header>
   )
 }
