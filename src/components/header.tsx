@@ -1,41 +1,48 @@
-"use client" // Ceci doit être la première ligne du fichier
+"use client"; // Ceci doit être la première ligne du fichier
 
-import { useEffect, useState } from 'react'
-import { client } from '../sanity/lib/client' // Assure-toi que ce chemin est correct
+import { useEffect, useState } from 'react';
+import { client } from '../sanity/lib/client'; // Assure-toi que ce chemin est correct
+
+// Définir une interface pour les données de la bannière
+interface BannerData {
+  text: string;
+  location: string;
+  eventDate: string; // Ajustez les types en fonction de vos données
+}
 
 const Header = () => {
-  const [bannerData, setBannerData] = useState<any>(null)
-  const [loading, setLoading] = useState(true) // État pour suivre le chargement des données
-  const [isSticky, setIsSticky] = useState(false) // État pour gérer le sticky
+  const [bannerData, setBannerData] = useState<BannerData | null>(null); // Utilisation du type défini
+  const [loading, setLoading] = useState(true); // État pour suivre le chargement des données
+  const [isSticky, setIsSticky] = useState(false); // État pour gérer le sticky
 
   useEffect(() => {
     const fetchBannerData = async () => {
-      const query = `*[_type == "banner"][0]`
-      const data = await client.fetch(query)
-      setBannerData(data)
-      setLoading(false) // Met à jour l'état de chargement une fois les données récupérées
-    }
+      const query = `*[_type == "banner"][0]`;
+      const data: BannerData = await client.fetch(query); // Assurez-vous que le type est correct
+      setBannerData(data);
+      setLoading(false); // Met à jour l'état de chargement une fois les données récupérées
+    };
 
-    fetchBannerData()
+    fetchBannerData();
 
     // Gérer le scroll pour rendre la navbar sticky
     const handleScroll = () => {
       if (window.scrollY > 0) {
-        setIsSticky(true)
+        setIsSticky(true);
       } else {
-        setIsSticky(false)
+        setIsSticky(false);
       }
-    }
+    };
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll);
     
     // Nettoyage de l'écouteur d'événements
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
-  const eventDate = bannerData ? new Date(bannerData.eventDate).toLocaleString() : null
+  const eventDate = bannerData ? new Date(bannerData.eventDate).toLocaleString() : null;
 
   return (
     <header>
@@ -64,7 +71,7 @@ const Header = () => {
         )
       )}
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
