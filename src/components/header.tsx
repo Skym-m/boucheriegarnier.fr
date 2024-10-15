@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <header>
       <nav className="nav">
-        <ul id="list" className="flex items-center justify-center fixed z-50 w-full h-16 bg-black text-white">
+        <ul id="list">
           <li><a href="/">ACCUEIL</a></li>
           <li><a href="/boucherie">BOUCHERIE</a></li>
           <li><a href="/charcuterie">CHARCUTERIE</a></li>

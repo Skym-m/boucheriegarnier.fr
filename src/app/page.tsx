@@ -21,7 +21,7 @@ export default function Home() {
 
 			<section id="location">
 				<div className="location">
-					<h1>NOUS TROUVER</h1>
+					<h1><span className="weight">NOUS</span> TROUVER</h1>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d298.7708063564446!2d4.754766960115389!3d44.56832337598007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b56ae38dcaf0e3%3A0x75e33a4852743965!2s51%20Avenue%20St%20Lazare%2C%2026200%20Mont%C3%A9limar!5e0!3m2!1sfr!2sfr!4v1727798356677!5m2!1sfr!2sfr" width="800" height="300"></iframe>
 					<h4>PAR TELEPHONE : 04 75 01 53 21<br/>
 					<br/>ADRESSE : 51 Avenue St Lazare, 26200 Montélimar<br/>
@@ -48,26 +48,6 @@ export default function Home() {
 					Et en septembre 2024, la boucherie GARNIER devient Maison GARNIER pour vous servir.</h4>
 				</div>
 				<img src="/accueil/thierry-veyrenche-gerard-garnier.jpg" alt=""></img>
-			</section>
-
-			<section id="actualites">
-				<div className="actualites">
-					<h1>ACTUALITES DE LA <span className="garnier">MAISON GARNIER</span></h1>
-					<div className="grid">
-						<a href="/" className="item">
-							<img src="/actualites/1.jpg" alt=""></img>
-							<h5>Concours</h5>
-						</a>
-						<a href="" className="item">
-							<img src="/actualites/3.jpg" alt=""></img>
-							<h5>Fêtes de Noël</h5>
-						</a>
-						<a href="" className="item">
-							<img src="/actualites/2.jpg" alt=""></img>
-							<h5>Nouvel arrivage !</h5>
-						</a>
-					</div>
-				</div>
 			</section>
 		</>
 	)

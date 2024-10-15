@@ -22,7 +22,6 @@ export default function Home() {
                 <img src="/boucherie/etalage-2.jpg" alt=""></img>
                 <img src="/boucherie/etalage-3.jpg" alt=""></img>
                 <img src="/boucherie/rotis.jpg" alt=""></img>
-                <img src="/boucherie/etalage-3.jpg" alt=""></img>
                 <img src="/boucherie/fondant-savoyard.jpg" alt=""></img>
                 <img src="/boucherie/paupiettes-citron.jpg" alt=""></img>
                 <img src="/boucherie/crique-chair-a-saucisse.jpg" alt=""></img>

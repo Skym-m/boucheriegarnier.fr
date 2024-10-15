@@ -3,7 +3,7 @@
 /* Welcome */
 
 .welcome {
-    background-image: linear-gradient(#ffffff70 33%, rgb(255, 255, 255) 66%, rgb(255, 255, 255) 100%), url(/accueil/background.jpg);
+    background-image: linear-gradient(#ffffff70 33%, rgb(255, 255, 255) 66%, rgb(255, 255, 255) 100%), url(/accueil/background.gif);
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 10%;
@@ -69,7 +69,7 @@
 }
 
 .about h4 {
-    color: rgb(167, 167, 167);
+    color: rgb(0, 0, 0);
     font-weight: 100;
     font-size: 30px;
 }
@@ -132,42 +132,9 @@
 }
 
 .history h4 {
-    color: rgb(167, 167, 167);
+    color: rgb(0, 0, 0);
     font-weight: 100;
     font-size: 30px;
-}
-
-/* Actualités */
-
-#actualites {
-    padding: 8%;
-    background-color: rgb(231, 231, 231);
-}
-
-.actualites h1 {
-    color: #242021;
-    font-size: 50px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    padding-bottom: 1%;
-}
-
-.actualites .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3%;
-    justify-items: center;
-    padding-bottom: 5%;
-}
-
-.actualites .item img {
-    width: 100%;
-    border-radius: 10px;
-    max-width: 500px;
-}
-
-.actualites .item {
-    text-align: center;
 }
 
 /* Responsive Web */
@@ -175,20 +142,31 @@
 @media (max-width : 435px) {
 
     .welcome {
-        padding-top: 60%;
+        padding-top: 40%;
         padding-bottom: 60%;
+        background-position: center;
     }
 
-    .welcome h1 {
-        font-size: 40px;
-    }
-
-    #about {
-        padding: 10%;
-        padding-top: 20%;
+    .welcome img {
+        width: 100%;
     }
 
     .about h1 {
         font-size: 50px;
     }
+
+    #about img {
+        width: 100%;
+    }
+
+    .location iframe {
+        border-radius: 10px;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    #history img {
+        width: 100%;
+    }
+    
 }

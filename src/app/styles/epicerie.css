@@ -38,7 +38,7 @@
 }
 
 .epicerie h4 {
-    color: rgb(167, 167, 167);
+    color: rgb(0, 0, 0);
     font-weight: 100;
     font-size: 30px;
 }
@@ -47,21 +47,21 @@
 
 @media (max-width : 435px) {
 
-    .welcome {
-        padding-top: 60%;
-        padding-bottom: 60%;
-    }
-
-    .welcome h1 {
-        font-size: 40px;
-    }
-
-    #about {
-        padding: 10%;
+    .epicerie {
         padding-top: 20%;
     }
 
-    .about h1 {
+    .epicerie h1 {
         font-size: 50px;
     }
+
+    .epicerie h2 {
+        font-size: 40px;
+        padding-bottom: 10%;
+    }
+
+    #epicerie img {
+        width: 100%;
+    }
+    
 }
