@@ -3,170 +3,170 @@
 /* Welcome */
 
 .welcome {
-    background-image: linear-gradient(#ffffff70 33%, rgb(255, 255, 255) 66%, rgb(255, 255, 255) 100%), url(/accueil/background.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 15%;
-    padding-bottom: 10%;
+	background-image: linear-gradient(#ffffff70 33%, rgb(255, 255, 255) 66%, rgb(255, 255, 255) 100%), url(/accueil/background.gif);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 15%;
+	padding-bottom: 10%;
 
-    animation-name: zoom;
-    animation-duration: 3s;
-    filter: opacity(0);
-    animation-fill-mode: forwards;
-    animation-delay: 500ms;
+	animation-name: zoom;
+	animation-duration: 3s;
+	filter: opacity(0);
+	animation-fill-mode: forwards;
+	animation-delay: 500ms;
 }
 
 .welcome img {
-    width: 50%;
-    z-index: 11;
+	width: 50%;
+	z-index: 11;
 
-    animation-name: zoom;
-    animation-duration: 3s;
-    filter: opacity(0);
-    animation-fill-mode: forwards;
-    animation-delay: 500ms;
+	animation-name: zoom;
+	animation-duration: 3s;
+	filter: opacity(0);
+	animation-fill-mode: forwards;
+	animation-delay: 500ms;
 }
 
 /* About */
 
 #about {
-    padding: 8%;
-    padding-top: 0%;
+	padding: 8%;
+	padding-top: 0%;
 
-    animation-name: zoom;
-    animation-duration: 3s;
-    filter: opacity(0);
-    animation-fill-mode: forwards;
-    animation-delay: 700ms;
+	animation-name: zoom;
+	animation-duration: 3s;
+	filter: opacity(0);
+	animation-fill-mode: forwards;
+	animation-delay: 700ms;
 }
 
 #about img {
-    margin: 1%;
-    margin-left: 0%;
-    border-radius: 10px;
-    width: 40%;
-    display: inline;
-    margin-right: 2%;
+	margin: 1%;
+	margin-left: 0%;
+	border-radius: 10px;
+	width: 40%;
+	display: inline;
+	margin-right: 2%;
 }
 
 .about {
-    padding-bottom: 5%;
+	padding-bottom: 5%;
 }
 
 .about h1 {
-    color: #242021;
-    font-size: 80px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    text-decoration: underline #860605;
-    padding-bottom: 1%;
+	color: #242021;
+	font-size: 80px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	text-decoration: underline #860605;
+	padding-bottom: 1%;
 }
 
 .about h2 {
-    color: rgb(0, 0, 0);
-    font-weight: 300;
-    font-size: 50px;
+	color: rgb(0, 0, 0);
+	font-weight: 300;
+	font-size: 50px;
 }
 
 .about h4 {
-    color: rgb(0, 0, 0);
-    font-weight: 100;
-    font-size: 30px;
+	color: rgb(0, 0, 0);
+	font-weight: 100;
+	font-size: 30px;
 }
 
 /* Location */
 
 #location {
-    background-color: rgb(231, 231, 231);
+	background-color: rgb(231, 231, 231);
 }
 
 .location {
-    padding: 8%;
-    padding-bottom: 14%;
+	padding: 8%;
+	padding-bottom: 14%;
 }
 
 .location h1 {
-    color: #242021;
-    font-size: 50px;
-    font-weight: 500;
-    padding-bottom: 1%;
+	color: #242021;
+	font-size: 50px;
+	font-weight: 500;
+	padding-bottom: 1%;
 }
 
 .location h4 {
-    color: rgb(167, 167, 167);
-    font-weight: 100;
-    font-size: 30px;
+	color: rgb(167, 167, 167);
+	font-weight: 100;
+	font-size: 30px;
 }
 
 .location iframe {
-    border-radius: 10px;
-    margin-right: 7%;
-    float: left;
+	border-radius: 10px;
+	margin-right: 7%;
+	float: left;
 }
 
 /* About */
 
 #history {
-    padding: 8%;
+	padding: 8%;
 }
 
 #history img {
-    margin: 1%;
-    margin-left: 0%;
-    border-radius: 10px;
-    width: 40%;
-    display: inline;
-    margin-right: 2%;
+	margin: 1%;
+	margin-left: 0%;
+	border-radius: 10px;
+	width: 40%;
+	display: inline;
+	margin-right: 2%;
 }
 
 .history {
-    padding-bottom: 5%;
+	padding-bottom: 5%;
 }
 
 .history h1 {
-    color: #242021;
-    font-size: 50px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    padding-bottom: 1%;
+	color: #242021;
+	font-size: 50px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	padding-bottom: 1%;
 }
 
 .history h4 {
-    color: rgb(0, 0, 0);
-    font-weight: 100;
-    font-size: 30px;
+	color: rgb(0, 0, 0);
+	font-weight: 100;
+	font-size: 30px;
 }
 
 /* Responsive Web */
 
 @media (max-width : 435px) {
 
-    .welcome {
-        padding-top: 60%;
-        padding-bottom: 60%;
-        background-position: center;
-    }
+	.welcome {
+		padding-top: 60%;
+		padding-bottom: 60%;
+		background-position: center;
+	}
 
-    .welcome img {
-        width: 100%;
-    }
+	.welcome img {
+		width: 100%;
+	}
 
-    .about h1 {
-        font-size: 50px;
-    }
+	.about h1 {
+		font-size: 50px;
+	}
 
-    #about img {
-        width: 100%;
-    }
+	#about img {
+		width: 100%;
+	}
 
-    .location iframe {
-        border-radius: 10px;
-        width: 100%;
-        margin-bottom: 5%;
-    }
+	.location iframe {
+		border-radius: 10px;
+		width: 100%;
+		margin-bottom: 5%;
+	}
 
-    #history img {
-        width: 100%;
-    }
-    
+	#history img {
+		width: 100%;
+	}
+
 }

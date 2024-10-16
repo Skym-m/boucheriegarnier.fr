@@ -12,9 +12,9 @@ export default function Home() {
                         Les bouchers connaissent tous parfaitement l’origine des produits, les éleveurs et les conditions d’élevage.<br />
                         Ils sauront aussi vous conseiller pour les modes de préparation ou de cuisson. N’hésitez pas à les solliciter !<br />
                         <br />Toute l’année du bœuf français d’origine locale.<br />
-                        De février à juin le Fin Gras du Mézenc, une viande persillée au goût unique.<br/>
-                        Veau : une viande rosée tendre à souhait.<br/>
-                        L’Agneau des montagnes ardéchoises<br/>
+                        De février à juin le Fin Gras du Mézenc, une viande persillée au goût unique.<br />
+                        Veau : une viande rosée tendre à souhait.<br />
+                        L’Agneau des montagnes ardéchoises<br />
                         Le porc, élevé en plein air en région Rhône Alpes Auvergne avec une alimentation sans OGM.</h4>
                 </div>
                 <img src="/boucherie/coupe.jpg" alt=""></img>

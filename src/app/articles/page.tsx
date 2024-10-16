@@ -5,7 +5,7 @@ import { client } from '../../sanity/lib/client';
 import Link from 'next/link';
 import '@/app/styles/articles.css';
 
-// Définir l'interface pour le type Article
+// Définir l'interface
 interface Article {
 	title: string;
 	slug: { current: string };
@@ -26,12 +26,12 @@ const Articles = () => {
 		fetchArticles();
 	}, []);
 
-	if (!articles.length) return <p>Chargement des articles...</p>; // Message de chargement si aucun article n'est chargé
+	if (!articles.length) return <p>Chargement des articles...</p>; // Message de chargement
 
 	return (
 		<section id='articles'>
 			<div className='articles'>
-			<h1>Articles</h1>
+				<h1>Articles</h1>
 				<ul>
 					{articles.map((article) => (
 						<li key={article.slug.current}>

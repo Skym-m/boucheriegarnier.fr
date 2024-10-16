@@ -3,65 +3,65 @@
 /* Epicerie */
 
 #epicerie {
-    padding: 8%;
-    padding-top: 6%;
+	padding: 8%;
+	padding-top: 6%;
 
-    animation-name: zoom;
-    animation-duration: 3s;
-    filter: opacity(0);
-    animation-fill-mode: forwards;
-    animation-delay: 1000ms;
+	animation-name: zoom;
+	animation-duration: 3s;
+	filter: opacity(0);
+	animation-fill-mode: forwards;
+	animation-delay: 1000ms;
 }
 
 #epicerie img {
-    margin: 1%;
-    margin-left: 0%;
-    border-radius: 10px;
-    width: 30%;
-    display: grid (3, 1fr);
-    margin-right: 2%;
+	margin: 1%;
+	margin-left: 0%;
+	border-radius: 10px;
+	width: 30%;
+	display: grid (3, 1fr);
+	margin-right: 2%;
 }
 
 .epicerie h1 {
-    color: #242021;
-    font-size: 80px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    text-decoration: underline #860605;
-    padding-bottom: 1%;
+	color: #242021;
+	font-size: 80px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	text-decoration: underline #860605;
+	padding-bottom: 1%;
 }
 
 .epicerie h2 {
-    color: rgb(0, 0, 0);
-    font-weight: 300;
-    font-size: 50px;
+	color: rgb(0, 0, 0);
+	font-weight: 300;
+	font-size: 50px;
 }
 
 .epicerie h4 {
-    color: rgb(0, 0, 0);
-    font-weight: 100;
-    font-size: 30px;
+	color: rgb(0, 0, 0);
+	font-weight: 100;
+	font-size: 30px;
 }
 
 /* Responsive Web */
 
 @media (max-width : 435px) {
 
-    .epicerie {
-        padding-top: 20%;
-    }
+	.epicerie {
+		padding-top: 20%;
+	}
 
-    .epicerie h1 {
-        font-size: 50px;
-    }
+	.epicerie h1 {
+		font-size: 50px;
+	}
 
-    .epicerie h2 {
-        font-size: 40px;
-        padding-bottom: 10%;
-    }
+	.epicerie h2 {
+		font-size: 40px;
+		padding-bottom: 10%;
+	}
 
-    #epicerie img {
-        width: 100%;
-    }
-    
+	#epicerie img {
+		width: 100%;
+	}
+
 }
