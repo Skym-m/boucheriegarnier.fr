@@ -325,14 +325,13 @@ footer {
 	}
 
 	nav #list li a {
-		font-size: 16px;
+		font-size: 13px;
 		white-space: normal;
 	}
 
 	.banner {
 		padding-top: 30%;
 	}
-
 
 	.banner h1 {
 		margin: 1%;
