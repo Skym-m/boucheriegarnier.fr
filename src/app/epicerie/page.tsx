@@ -22,6 +22,7 @@ export default function Home() {
 				<img src="/epicerie/paupiettes-citron.jpg" alt="" />
 				<img src="/epicerie/presentation.jpg" alt="" />
 				<img src="/epicerie/verrines-saumon.jpg" alt="" />
+				<img src="/epicerie/produits-1.jpg" alt="" />
 			</section>
 		</>
 	)
