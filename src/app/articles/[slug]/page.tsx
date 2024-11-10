@@ -10,13 +10,7 @@ interface Article {
 	author: string;
 }
 
-interface ArticlePageProps {
-	params: {
-		slug: string;
-	};
-}
-
-export default async function ArticlePage({ params }: ArticlePageProps) {
+export default async function ArticlePage({ params }: { params: { slug: string } }) {
 	const query = `*[_type == "article" && slug.current == $slug][0]{
     title,
     content,
