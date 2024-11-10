@@ -22,25 +22,43 @@
 	margin-right: 2%;
 }
 
+.fin-gras img {
+	margin: auto !important;
+	width: 10% !important;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	display: block;
+}
+
+.random-size-image {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
 .boucherie h1 {
 	color: #242021;
-	font-size: 80px;
+	font-size: 60px;
 	font-weight: 500;
 	margin-bottom: 10px;
 	text-decoration: underline #860605;
 	padding-bottom: 1%;
+	text-align: center;
 }
 
 .boucherie h2 {
 	color: rgb(0, 0, 0);
 	font-weight: 300;
-	font-size: 50px;
+	font-size: 40px;
+	text-align: center;
 }
 
 .boucherie h4 {
 	color: rgb(0, 0, 0);
 	font-weight: 100;
 	font-size: 30px;
+	text-align: center;
 }
 
 /* Responsive Web */

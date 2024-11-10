@@ -135,6 +135,10 @@ html {
 	font-weight: 100;
 }
 
+.animation {
+	color: #ff0000;
+}
+
 /* Navbar */
 
 nav {

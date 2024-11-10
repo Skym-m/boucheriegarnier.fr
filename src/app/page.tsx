@@ -15,10 +15,12 @@ export default function Home() {
 						Une équipe souriante, dynamique et compétente vous proposera des produits pour toutes vos envies : bœuf, veau, agneau, porc, charcuterie et tant d’autres, des produits de qualité avec une origine contrôlée.
 					</h4>
 				</div>
-				<img src="/accueil/vitrine.jpg" alt="" />
-				<img src="/accueil/plat-1.jpg" alt="" />
-				<img src="/accueil/plat-2.jpg" alt="" />
-				<img src="/accueil/equipe.jpg" alt="" />
+				<div className="image-grid">
+					<img src="/accueil/vitrine.jpg" alt="" />
+					<img src="/accueil/plat-1.jpg" alt="" />
+					<img src="/accueil/plat-2.jpg" alt="" />
+					<img src="/accueil/equipe.jpg" alt="" />
+				</div>
 			</section>
 
 			<section id="location">
@@ -49,6 +51,13 @@ export default function Home() {
 					</h4>
 				</div>
 				<img src="/accueil/thierry-veyrenche-gerard-garnier.jpg" alt="" />
+			</section>
+
+			<section id='fidelite'>
+				<div className='fidelite'>
+					<h1><span className="weight">CARTE DE</span> FIDELITE</h1>
+					<img src="/accueil/carte-fidelite.png" alt="" />
+				</div>
 			</section>
 		</>
 	)

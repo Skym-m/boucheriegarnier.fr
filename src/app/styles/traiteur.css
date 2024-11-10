@@ -13,34 +13,51 @@
 	animation-delay: 1000ms;
 }
 
-#traiteur img {
-	margin: 1%;
-	margin-left: 0%;
+.image-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 10px;
+	padding: 10px;
+}
+
+.image-grid img {
+	width: 100%;
+	height: auto;
 	border-radius: 10px;
+}
+
+#traiteur .carte {
+	margin: auto;
 	width: 30%;
-	display: grid (3, 1fr);
-	margin-right: 2%;
+	align-items: center;
+	display: block;
+	border-radius: 10px;
+	padding-bottom: 5%;
 }
 
 .traiteur h1 {
 	color: #242021;
-	font-size: 80px;
+	font-size: 60px;
 	font-weight: 500;
 	margin-bottom: 10px;
 	text-decoration: underline #860605;
 	padding-bottom: 1%;
+	text-align: center;
 }
 
 .traiteur h2 {
 	color: rgb(0, 0, 0);
 	font-weight: 300;
-	font-size: 50px;
+	font-size: 40px;
+	text-align: center;
 }
 
 .traiteur h4 {
 	color: rgb(0, 0, 0);
 	font-weight: 100;
 	font-size: 30px;
+	text-align: center;
+	padding-bottom: 5%;
 }
 
 /* Responsive Web */

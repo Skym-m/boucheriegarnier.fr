@@ -26,12 +26,12 @@ const Articles = () => {
 		fetchArticles();
 	}, []);
 
-	if (!articles.length) return <p>Chargement des articles...</p>; // Message de chargement
+	if (!articles.length) return <p>Chargement des actualités...</p>; // Message de chargement
 
 	return (
 		<section id='articles'>
 			<div className='articles'>
-				<h1>Articles</h1>
+				<h1>Actualités</h1>
 				<ul>
 					{articles.map((article) => (
 						<li key={article.slug.current}>

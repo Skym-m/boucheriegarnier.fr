@@ -27,7 +27,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 	const article: Article | null = await client.fetch(query, { slug: params.slug });
 
 	if (!article) {
-		return <p>Article introuvable</p>;
+		return <p>Actualité introuvable</p>;
 	}
 
 	// Configuration des composants personnalisés pour le rendu du contenu

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* page articles */
+/* Page articles */
 
 #articles {
 	padding: 8%;
@@ -15,7 +15,7 @@
 
 .articles h1 {
 	color: #242021;
-	font-size: 80px;
+	font-size: 60px;
 	font-weight: 500;
 	margin-bottom: 10px;
 	text-decoration: underline #860605;
@@ -25,7 +25,7 @@
 .articles h2 {
 	color: rgb(0, 0, 0);
 	font-weight: 300;
-	font-size: 50px;
+	font-size: 40px;
 }
 
 .articles h4 {
@@ -48,7 +48,7 @@ article {
 
 article h1 {
 	color: #242021;
-	font-size: 80px;
+	font-size: 60px;
 	font-weight: 500;
 	margin-bottom: 10px;
 	text-decoration: underline #860605;
