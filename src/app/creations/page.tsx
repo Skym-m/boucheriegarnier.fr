@@ -7,7 +7,7 @@ export default function Home() {
                 <div className="creations">
                     <h1><span className="weight">NOS</span> CREATIONS</h1>
                     <h2>Nos créations</h2>
-                    <h4>L'équipe de la Maison GARNIER a toujours de bonnes idées et vous propose des créations diverses et variées pour répondre à vos attentes.<br />
+                    <h4>L&apos;équipe de la Maison GARNIER a toujours de bonnes idées et vous propose des créations diverses et variées pour répondre à vos attentes.<br />
                         A vous de choisir !<br />
 
                         <br />Un devis pourra être réalisé à votre demande</h4>
