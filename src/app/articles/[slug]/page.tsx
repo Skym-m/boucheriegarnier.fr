@@ -10,7 +10,13 @@ interface Article {
 	author: string;
 }
 
-export default async function ArticlePage({ params }: { params: { slug: string } }) {
+interface ArticlePageProps {
+	params: {
+		slug: string;
+	};
+}
+
+export default async function ArticlePage({ params }: ArticlePageProps) {
 	const query = `*[_type == "article" && slug.current == $slug][0]{
     title,
     content,
@@ -21,7 +27,7 @@ export default async function ArticlePage({ params }: { params: { slug: string }
 	const article: Article | null = await client.fetch(query, { slug: params.slug });
 
 	if (!article) {
-		return <p>Article introuvable</p>;
+		return <p>Actualité introuvable</p>;
 	}
 
 	// Configuration des composants personnalisés pour le rendu du contenu
