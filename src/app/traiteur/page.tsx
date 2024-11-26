@@ -24,7 +24,6 @@ export default function Home() {
 						<img src="/traiteur/vitrine-2.jpg" alt=""></img>
 						<img src="/traiteur/verrines.jpg" alt=""></img>
 						<img src="/traiteur/presentation.jpg" alt=""></img>
-						<img src="/traiteur/legumes.jpg" alt=""></img>
 					</div>
 
 

@@ -13,7 +13,11 @@ export default function Home() {
 					<h4>
 						et à partir de viande de porc sélectionnée par nos soins.
 					</h4>
-					<img src="/charcuterie/preparation-1.jpg" alt=""></img>
+					<div className='conteneur'>
+						<img src="/charcuterie/coppa.jpg" alt=""></img>
+						<img src="/charcuterie/pate-croute.jpg" alt=""></img>
+						<img src="/charcuterie/saucisses.jpg" alt=""></img>
+					</div>
 					<h4>
 						Vous trouverez de nombreux produits : saucisson, saucisse sèche, caillette, jambon cuit nature ou aux herbes, jambon cru, viande séchée, pâté en croute…
 					</h4>

@@ -46,6 +46,11 @@
 	text-align: center;
 }
 
+.conteneur img {
+	display: inline !important;
+	margin: 1% !important;
+}
+
 /* Responsive Web */
 
 @media (max-width : 435px) {

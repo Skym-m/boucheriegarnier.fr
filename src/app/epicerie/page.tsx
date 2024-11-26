@@ -16,17 +16,13 @@ export default function Home() {
 					</div>
 					<h4><br />Des vins, rouge, rosé ou blanc en cubi ou en bouteille.
 						<br />Un peu d’épicerie : chips, bières, croutons…
+						<div className="image-grid">
+							<img src="/epicerie/Epicerie-1.png" alt="" />
+							<img src="/epicerie/Epicerie-2.png" alt="" />
+							<img src="/epicerie/Epicerie-3.png" alt="" />
+							<img src="/epicerie/Epicerie-4.png" alt="" />
+						</div>
 					</h4>
-				</div>
-				<div className="image-grid">
-					<img src="/epicerie/burgers.jpg" alt="Burgers" className="wide" />
-					<img src="/epicerie/chair-a-saucisse.jpg" alt="Chair à saucisse" className='wide' />
-					<img src="/epicerie/crique-chair-a-saucisse.jpg" alt="Crique chair à saucisse" className="wide" />
-					<img src="/epicerie/fondant-savoyard.jpg" alt="Fondant savoyard" className='wide' />
-					<img src="/epicerie/paupiettes-citron.jpg" alt="Paupiettes citron" className="tall-wide" />
-					<img src="/epicerie/presentation.jpg" alt="Présentation" />
-					<img src="/epicerie/verrines-saumon.jpg" alt="Verrines saumon" className="tall" />
-					<img src="/epicerie/produits-1.jpg" alt="Produits divers" />
 				</div>
 			</section>
 		</>

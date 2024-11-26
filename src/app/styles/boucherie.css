@@ -14,12 +14,11 @@
 }
 
 #boucherie img {
-	margin: 1%;
+	margin: 3%;
 	margin-left: 0%;
 	border-radius: 10px;
 	width: 30%;
 	display: grid (3, 1fr);
-	margin-right: 2%;
 }
 
 .fin-gras img {
@@ -60,6 +59,52 @@
 	font-size: 30px;
 	text-align: center;
 }
+
+/* Especes */
+
+#especes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 8%;
+	padding-top: 0%;
+	
+    animation-name: zoom;
+    animation-duration: 3s;
+    filter: opacity(0);
+    animation-fill-mode: forwards;
+    animation-delay: 1000ms;
+}
+
+#especes > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* ou ajustez selon la mise en page souhaitée */
+    padding: 2%;
+}
+
+#especes > div:nth-child(odd) img {
+    float: left;
+    margin-right: 7%;
+}
+
+#especes > div:nth-child(even) img {
+    float: right;
+    margin-left: 7%;
+}
+
+#especes img {
+    width: 50%;
+    max-width: 500px; /* Limitez la taille des images */
+    object-fit: cover;
+}
+
+#especes h4 {
+    font-size: 30px;
+    margin: 0 20px;
+}
+
 
 /* Responsive Web */
 

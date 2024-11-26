@@ -16,12 +16,14 @@ export default function Home() {
 					</h4>
 				</div>
 				<div className="image-grid">
-					<img src="/accueil/vitrine.jpg" alt="" />
-					<img src="/accueil/plat-1.jpg" alt="" />
-					<img src="/accueil/plat-2.jpg" alt="" />
-					<img src="/accueil/equipe.jpg" alt="" />
+					<img src="/accueil/vitrine.jpg" alt="Vitrine" />
+					<img src="/accueil/plat-1.jpg" alt="Plat 1" />
+					<img src="/accueil/equipe.jpg" alt="Équipe" />
+					<img src="/accueil/plat-2.jpg" alt="Plat 2" />
+					<img src="/accueil/carte-fidelite.png" alt="Carte de fidélité" className="carte-fidelite" />
 				</div>
 			</section>
+
 
 			<section id="location">
 				<div className="location">
@@ -51,13 +53,6 @@ export default function Home() {
 					</h4>
 				</div>
 				<img src="/accueil/thierry-veyrenche-gerard-garnier.jpg" alt="" />
-			</section>
-
-			<section id='fidelite'>
-				<div className='fidelite'>
-					<h1><span className="weight">CARTE DE</span> FIDELITE</h1>
-					<img src="/accueil/carte-fidelite.png" alt="" />
-				</div>
 			</section>
 		</>
 	)

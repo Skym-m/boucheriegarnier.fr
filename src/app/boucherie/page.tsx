@@ -26,11 +26,33 @@ export default function Home() {
 
                 <img src="/boucherie/coupe.jpg" alt="" width="200" height="300" className="random-size-image" />
                 <img src="/boucherie/etalage-1.jpg" alt="" width="260" height="280" className="random-size-image" />
-                <img src="/boucherie/etalage-2.jpg" alt="" width="230" height="320" className="random-size-image" />
                 <img src="/boucherie/etalage-3.jpg" alt="" width="250" height="340" className="random-size-image" />
                 <img src="/boucherie/rotis.jpg" alt="" width="270" height="360" className="random-size-image" />
 
             </section>
+            <section id="especes">
+                <div className="espece boeuf">
+                    <h4>Toute l’année du bœuf français d’origine locale</h4>
+                    <img src="/boucherie/boeuf.png" alt="Image de boeuf" />
+                </div>
+                <div className="espece veau">
+                    <img src="/boucherie/veau.jpg" alt="Image de veau" />
+                    <h4>Le Veau : une viande rosée tendre à souhait</h4>
+                </div>
+                <div className="espece agneau">
+                    <h4>L’Agneau des montagnes ardéchoises</h4>
+                    <img src="/boucherie/agneau.jpg" alt="Image d'agneau" />
+                </div>
+                <div className="espece porc">
+                    <img src="/boucherie/porc.jpg" alt="Image de porc" />
+                    <h4>Le porc, élevé en plein air en région Rhône Alpes Auvergne avec une alimentation sans OGM</h4>
+                </div>
+                <div className="espece volaille">
+                    <h4>Des volailles fermières élevées en Drôme provençale</h4>
+                    <img src="/boucherie/volaille.png" alt="Image de volaille" />
+                </div>
+            </section>
+
         </>
     )
 }
