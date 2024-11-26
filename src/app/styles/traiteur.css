@@ -15,16 +15,17 @@
 
 .image-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-	gap: 10px;
-	padding: 10px;
+	grid-template-columns: repeat(4, 1fr); /* 4 colonnes de taille égale */
+	gap: 10px; /* Espacement entre les images */
+	padding: 10px; /* Marges internes */
 }
 
 .image-grid img {
-	width: 100%;
-	height: auto;
-	border-radius: 10px;
+	width: 100%; /* Les images occupent toute la largeur de leur case */
+	height: auto; /* Maintient les proportions */
+	border-radius: 10px; /* Coins arrondis */
 }
+
 
 #traiteur .carte {
 	margin: auto;
