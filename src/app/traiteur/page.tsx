@@ -13,7 +13,7 @@ export default function Home() {
 						<br />Que ce soit des salades composées froides ou des viandes en sauce à faire réchauffer chez soi, il y en a pour tous les goûts.</h4>
 
 					<h2>La carte</h2>
-					<img src="/traiteur/carte.jpg" alt="" className='carte'></img>
+					<img src="/traiteur/carte.png" alt="" className='carte'></img>
 
 					<div className="image-grid">
 						<img src="/traiteur/preparation-1.jpg" alt=""></img>

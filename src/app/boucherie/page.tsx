@@ -26,7 +26,6 @@ export default function Home() {
 
                 <img src="/boucherie/coupe.jpg" alt="" width="200" height="300" className="random-size-image" />
                 <img src="/boucherie/etalage-1.jpg" alt="" width="260" height="280" className="random-size-image" />
-                <img src="/boucherie/etalage-3.jpg" alt="" width="250" height="340" className="random-size-image" />
                 <img src="/boucherie/rotis.jpg" alt="" width="270" height="360" className="random-size-image" />
 
             </section>

@@ -16,13 +16,11 @@ export default function Home() {
                         <img src="/creations/barquette-savoyarde.jpg" alt="" className='tall'></img>
                         <img src="/creations/chair-a-saucisse.jpg" alt="" className='wide-2'></img>
                         <img src="/creations/crique-chair-a-saucisse.jpg" alt="" className='tall'></img>
+                        <img src="/epicerie/burgers.jpg" alt="Burgers" className="wide-2" />
                         <img src="/creations/fondant-savoyard.jpg" alt="" className='tall'></img>
                         <img src="/creations/paupiettes-citron.jpg" alt="" className='tall'></img>
                         <img src="/creations/legumes.jpg" alt="" className='tall'></img>
                         <img src="/creations/verrines-saumon.jpg" alt="" className='wide'></img>
-                        <img src="/epicerie/burgers.jpg" alt="Burgers" className="wide" />
-                        <img src="/epicerie/presentation.jpg" alt="Présentation" />
-                        <img src="/epicerie/produits-1.jpg" alt="Produits divers" />
                     </div>
                 </div>
             </section>
