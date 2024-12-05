@@ -3,9 +3,9 @@
 /* Welcome */
 
 .welcome {
-	/* background-image: linear-gradient(#ffffff70 33%, rgb(255, 255, 255) 66%, rgb(255, 255, 255) 100%), url(/accueil/background.gif);
+	background-image: linear-gradient(#ffffff70 33%, rgb(255, 255, 255) 66%, rgb(255, 255, 255) 100%), url(/accueil/background.gif);
 	background-size: cover;
-	background-repeat: no-repeat; */
+	background-repeat: no-repeat;
 	padding-top: 15%;
 	padding-bottom: 6%;
 
