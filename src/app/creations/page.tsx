@@ -14,10 +14,10 @@ export default function Home() {
 
                     <div className="image-grid">
                         <img src="/creations/barquette-savoyarde.jpg" alt="" className='tall'></img>
-                        <img src="/creations/chair-a-saucisse.jpg" alt="" className='wide-2'></img>
+                        <img src="/creations/chair-a-saucisse.jpg" alt="" className='wide'></img>
                         <img src="/creations/crique-chair-a-saucisse.jpg" alt="" className='tall'></img>
-                        <img src="/epicerie/burgers.jpg" alt="Burgers" className="wide-2" />
                         <img src="/creations/fondant-savoyard.jpg" alt="" className='tall'></img>
+                        <img src="/epicerie/burgers.jpg" alt="Burgers" className="wide" />
                         <img src="/creations/paupiettes-citron.jpg" alt="" className='tall'></img>
                         <img src="/creations/legumes.jpg" alt="" className='tall'></img>
                         <img src="/creations/verrines-saumon.jpg" alt="" className='wide'></img>
