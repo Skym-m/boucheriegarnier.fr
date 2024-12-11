@@ -1,6 +1,6 @@
 import '@/app/styles/boucherie.css'
 
-export default function Home() {
+export default function Boucherie() {
     return (
         <>
             <section id="boucherie">

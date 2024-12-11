@@ -1,6 +1,6 @@
 import '@/app/styles/epicerie.css';
 
-export default function Home() {
+export default function Epicerie() {
 	return (
 		<>
 			<section id="epicerie">

@@ -1,6 +1,6 @@
 import '@/app/styles/traiteur.css'
 
-export default function Home() {
+export default function Traiteur() {
 	return (
 		<>
 			<section id="traiteur">
@@ -19,7 +19,7 @@ export default function Home() {
 						<img src="/traiteur/preparation-1.jpg" alt=""></img>
 						<img src="/traiteur/preparation-2.jpg" alt=""></img>
 						<img src="/traiteur/preparation-3.jpg" alt=""></img>
-						<img src="/traiteur/salade-2.jpg" alt=""></img>
+						<img src="/traiteur/salade.jpg" alt=""></img>
 						<img src="/traiteur/vitrine-1.jpg" alt=""></img>
 						<img src="/traiteur/vitrine-2.jpg" alt=""></img>
 						<img src="/traiteur/verrines.jpg" alt=""></img>

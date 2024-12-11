@@ -1,6 +1,6 @@
 import '@/app/styles/charcuterie.css'
 
-export default function Home() {
+export default function Charcuterie() {
 	return (
 		<>
 			<section id="charcuterie">

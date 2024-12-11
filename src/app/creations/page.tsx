@@ -1,6 +1,6 @@
 import '@/app/styles/creations.css'
 
-export default function Home() {
+export default function Creations() {
     return (
         <>
             <section id="creations">
@@ -17,7 +17,7 @@ export default function Home() {
                         <img src="/creations/chair-a-saucisse.jpg" alt="" className='wide'></img>
                         <img src="/creations/crique-chair-a-saucisse.jpg" alt="" className='tall'></img>
                         <img src="/creations/fondant-savoyard.jpg" alt="" className='tall'></img>
-                        <img src="/epicerie/burgers.jpg" alt="Burgers" className="wide" />
+                        <img src="/creations/burgers.jpg" alt="Burgers" className="wide" />
                         <img src="/creations/paupiettes-citron.jpg" alt="" className='tall'></img>
                         <img src="/creations/legumes.jpg" alt="" className='tall'></img>
                         <img src="/creations/verrines-saumon.jpg" alt="" className='wide'></img>
