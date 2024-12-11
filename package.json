@@ -5,23 +5,27 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 8123",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@sanity/image-url": "^1.1.0",
     "@sanity/vision": "^3.67.1",
-    "next": "15.1.0",
     "next-sanity": "^9.8.25",
+    "sanity": "^3.67.1",
+    "styled-components": "^6.1.13",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "sanity": "^3.67.1",
-    "styled-components": "^6.1.13"
+    "next": "15.1.0"
   },
   "devDependencies": {
+    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "typescript": "^5"
+    "eslint": "^9",
+    "eslint-config-next": "15.1.0",
+    "@eslint/eslintrc": "^3",
+    "globals": "^15.13.0"
   }
 }
