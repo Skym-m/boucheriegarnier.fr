@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { client } from '../sanity/lib/client';
+import Link from 'next/link'; // Importation de Link
 
 // Définir une interface pour les données de la bannière
 interface BannerData {
@@ -48,13 +49,13 @@ const Header = () => {
 		<header>
 			<nav className={`nav ${isSticky ? 'sticky' : ''}`}>
 				<ul id="list">
-					<li><a href="/">ACCUEIL</a></li>
-					<li><a href="/boucherie">BOUCHERIE</a></li>
-					<li><a href="/charcuterie">CHARCUTERIE</a></li>
-					<li><a href="/traiteur">TRAITEUR</a></li>
-					<li><a href="/epicerie">EPICERIE</a></li>
-					<li><a href="/creations">NOS CREATIONS</a></li>
-					<li><a href="/articles">ACTUALITES</a></li>
+					<li><Link href="/">ACCUEIL</Link></li> {/* Remplacer <a> par <Link> */}
+					<li><Link href="/boucherie">BOUCHERIE</Link></li> {/* Remplacer <a> par <Link> */}
+					<li><Link href="/charcuterie">CHARCUTERIE</Link></li> {/* Remplacer <a> par <Link> */}
+					<li><Link href="/traiteur">TRAITEUR</Link></li> {/* Remplacer <a> par <Link> */}
+					<li><Link href="/epicerie">EPICERIE</Link></li> {/* Remplacer <a> par <Link> */}
+					<li><Link href="/creations">NOS CREATIONS</Link></li> {/* Remplacer <a> par <Link> */}
+					<li><Link href="/articles">ACTUALITES</Link></li> {/* Remplacer <a> par <Link> */}
 				</ul>
 			</nav>
 
