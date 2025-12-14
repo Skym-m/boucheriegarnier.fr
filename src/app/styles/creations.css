@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 /* Creations */
 
 #creations {
@@ -74,7 +75,7 @@
 
 /* Responsive Web */
 
-@media (max-width : 435px) {
+@media (max-width: 435px) {
 
     .creations {
         padding-top: 20%;

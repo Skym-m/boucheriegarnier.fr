@@ -1,75 +1,77 @@
 @charset "UTF-8";
 
+
 /* Charcuterie */
 
 #charcuterie {
-	padding: 8%;
-	padding-top: 6%;
+    padding: 8%;
+    padding-top: 6%;
 
-	animation-name: zoom;
-	animation-duration: 3s;
-	filter: opacity(0);
-	animation-fill-mode: forwards;
-	animation-delay: 1000ms;
+    animation-name: zoom;
+    animation-duration: 3s;
+    filter: opacity(0);
+    animation-fill-mode: forwards;
+    animation-delay: 1000ms;
 }
 
 #charcuterie img {
-	margin: 3% auto;
-	align-items: center;
-	justify-content: center;
-	display: block;
-	border-radius: 10px;
-	width: 30%;
+    margin: 3% auto;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    border-radius: 10px;
+    width: 30%;
 }
 
 .charcuterie h1 {
-	color: #242021;
-	font-size: 60px;
-	font-weight: 500;
-	margin-bottom: 10px;
-	text-decoration: underline #860605;
-	padding-bottom: 1%;
-	text-align: center;
+    color: #242021;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-decoration: underline #860605;
+    padding-bottom: 1%;
+    text-align: center;
 }
 
 .charcuterie h2 {
-	color: rgb(0, 0, 0);
-	font-weight: 300;
-	font-size: 40px;
-	text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
 }
 
 .charcuterie h4 {
-	color: rgb(0, 0, 0);
-	font-weight: 100;
-	font-size: 30px;
-	text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center;
 }
 
 .conteneur img {
-	display: inline !important;
-	margin: 1% !important;
+    display: inline !important;
+    margin: 1% !important;
 }
+
 
 /* Responsive Web */
 
-@media (max-width : 435px) {
+@media (max-width: 435px) {
 
-	.charcuterie {
-		padding-top: 20%;
-	}
+    .charcuterie {
+        padding-top: 20%;
+    }
 
-	.charcuterie h1 {
-		font-size: 50px;
-	}
+    .charcuterie h1 {
+        font-size: 50px;
+    }
 
-	.charcuterie h2 {
-		font-size: 40px;
-		padding-bottom: 10%;
-	}
+    .charcuterie h2 {
+        font-size: 40px;
+        padding-bottom: 10%;
+    }
 
-	#charcuterie img {
-		width: 100%;
-	}
+    #charcuterie img {
+        width: 100%;
+    }
 
 }

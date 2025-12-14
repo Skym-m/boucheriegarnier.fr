@@ -1,51 +1,50 @@
 "use client";
 
-import { useEffect, useState } from 'react';
-import { client } from '../../sanity/lib/client';
+import {useEffect, useState} from 'react';
+import {client} from '../../sanity/lib/client';
 import Link from 'next/link';
 import '@/app/styles/articles.css';
 
-// Définir l'interface
 interface Article {
-	title: string;
-	slug: { current: string };
-	publishedAt: string;
-	author: string;
+    title: string;
+    slug: { current: string };
+    publishedAt: string;
+    author: string;
 }
 
 const Articles = () => {
-	const [articles, setArticles] = useState<Article[]>([]);
+    const [articles, setArticles] = useState<Article[]>([]);
 
-	useEffect(() => {
-		const fetchArticles = async () => {
-			const query = `*[_type == "article"]{title, slug, publishedAt, author}`;
-			const data = await client.fetch(query);
-			setArticles(data);
-		};
+    useEffect(() => {
+        const fetchArticles = async () => {
+            const query = `*[_type == "article"]{title, slug, publishedAt, author}`;
+            const data = await client.fetch(query);
+            setArticles(data);
+        };
 
-		fetchArticles();
-	}, []);
+        fetchArticles();
+    }, []);
 
-	if (!articles.length) return <p>Chargement des actualités...</p>; // Message de chargement
+    if (!articles.length) return <p>Chargement des actualités...</p>;
 
-	return (
-		<section id='articles'>
-			<div className='articles'>
-				<h1>Actualités</h1>
-				<ul>
-					{articles.map((article) => (
-						<li key={article.slug.current}>
-							<Link href={`/articles/${article.slug.current}`} className="article-link">
-								<h2>{article.title}</h2>
-								<h4>Par {article.author}</h4>
-								<h4>Publié le {new Date(article.publishedAt).toLocaleDateString()}</h4>
-							</Link>
-						</li>
-					))}
-				</ul>
-			</div>
-		</section>
-	);
+    return (
+        <section id='articles'>
+            <div className='articles'>
+                <h1>Actualités</h1>
+                <ul>
+                    {articles.map((article) => (
+                        <li key={article.slug.current}>
+                            <Link href={`/articles/${article.slug.current}`} className="article-link">
+                                <h2>{article.title}</h2>
+                                <h4>Par {article.author}</h4>
+                                <h4>Publié le {new Date(article.publishedAt).toLocaleDateString()}</h4>
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </section>
+    );
 }
 
 export default Articles;
