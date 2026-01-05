@@ -23,7 +23,6 @@ export default function Accueil() {
                     <img src="/accueil/plat-1.jpg" alt="Plat 1"/>
                     <img src="/accueil/equipe.jpg" alt="Équipe"/>
                     <img src="/accueil/plat-2.jpg" alt="Plat 2"/>
-                    <img src="/accueil/carte-fidelite.png" alt="Carte de fidélité" className="carte-fidelite"/>
                 </div>
             </section>
 
