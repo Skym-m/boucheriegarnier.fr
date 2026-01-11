@@ -67,16 +67,23 @@
     font-weight: 100;
     font-size: 30px;
     text-align: center;
-    padding-bottom: 1%;
+    padding-top: 6%;
+    padding-bottom: 2%;
+}
+
+.image img {
+    margin: auto;
+    display: flex;
+    width: 30%;
 }
 
 
 /* Responsive Web */
 
-@media (max-width: 435px) {
+@media (max-width: 450px) {
 
     .epicerie {
-        padding-top: 20%;
+        padding-top: 35%;
     }
 
     .epicerie h1 {

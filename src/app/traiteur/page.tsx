@@ -16,7 +16,7 @@ export default function Traiteur() {
                         soi, il y en a pour tous les goûts.</h4>
 
                     <h2>La carte</h2>
-                    <img src="/traiteur/carte.png" alt="" className='carte'></img>
+                    <img src="/traiteur/carte.jpg" alt="" className='carte'></img>
 
                     <div className="image-grid">
                         <img src="/traiteur/preparation-1.jpg" alt=""></img>
@@ -28,10 +28,6 @@ export default function Traiteur() {
                         <img src="/traiteur/verrines.jpg" alt=""></img>
                         <img src="/traiteur/presentation.jpg" alt=""></img>
                     </div>
-
-
-                    <h4><span className='animation'>Animation un samedi sur 2<br/>
-						<br/>Un nouveau plat chaud à découvrir !</span></h4>
                 </div>
             </section>
         </>

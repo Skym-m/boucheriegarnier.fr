@@ -15,8 +15,11 @@ export default function Epicerie() {
                         <img src="/epicerie/fromage-1.jpg" alt="" className='wide'/>
                         <img src="/epicerie/fromage-2.jpg" alt="" className='wide'/>
                     </div>
-                    <h4><br/>Des vins, rouge, rosé ou blanc en cubi ou en bouteille.
-                        <br/>Un peu d’épicerie : chips, bières, croutons…
+                    <h4>Découvrez nos vins rouges, blancs et rosé locaux</h4>
+                    <div className="image">
+                        <img src="/epicerie/cave.jpg" alt="" className='wide'/>
+                    </div>
+                    <h4><br/>Nous proposons une large gamme de produits d’épicerie locaux : salé ou sucré, des miels, crème de chataîgne, bières, chips, croutons etc…
                         <div className="image-grid">
                             <img src="/epicerie/Epicerie-1.png" alt=""/>
                             <img src="/epicerie/Epicerie-2.png" alt=""/>

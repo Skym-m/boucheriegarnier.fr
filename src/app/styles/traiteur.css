@@ -64,10 +64,10 @@
 
 /* Responsive Web */
 
-@media (max-width: 435px) {
+@media (max-width: 450px) {
 
     .traiteur {
-        padding-top: 20%;
+        padding-top: 35%;
     }
 
     .traiteur h1 {
@@ -81,6 +81,14 @@
 
     #traiteur img {
         width: 100%;
+    }
+
+    #traiteur .carte {
+        width: 100%;
+    }
+
+    .image-grid {
+        display: inherit;
     }
 
 }

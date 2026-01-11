@@ -154,14 +154,14 @@ article p {
 
 /* Responsive Web */
 
-@media (max-width: 435px) {
+@media (max-width: 450px) {
 
     article h1 {
         font-size: 50px;
     }
 
     .articles {
-        padding-top: 20%;
+        padding-top: 35%;
     }
 
     .articles h1 {

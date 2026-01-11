@@ -55,10 +55,10 @@
 
 /* Responsive Web */
 
-@media (max-width: 435px) {
+@media (max-width: 450px) {
 
     .charcuterie {
-        padding-top: 20%;
+        padding-top: 35%;
     }
 
     .charcuterie h1 {

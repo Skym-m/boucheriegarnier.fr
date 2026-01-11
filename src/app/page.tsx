@@ -26,6 +26,43 @@ export default function Accueil() {
                 </div>
             </section>
 
+            <section id='breeders'>
+                <h1>PORTRAIT DE NOS ELEVEURS</h1>
+                <div className='breeders'>
+                    <div className="cards">
+                        <img src="/accueil/1.jpg" alt=""/>
+                        <h2>Famille SEVENIER à Berzème</h2>
+                        <h4>Au GAEC de Chaix, Serge Sevenier, son fils Rémi et sa belle-fille Mathilde Florenson élèvent
+                            60 vaches allaitantes et 200 brebis sur 200 hectares. Éleveurs passionnés depuis plus de 40
+                            ans, ils nourrissent leurs animaux avec des céréales et les fourrages de l’exploitation. Le
+                            bien-être animal est leur priorité : les animaux passent avant tout. Leur fierté est de voir
+                            leurs bêtes en bonne santé et en confiance. Partenaires de longue date avec Thierry, ils
+                            défendent les circuits courts pour plus de transparence et de proximité.”</h4>
+                    </div>
+                    <div className="cards">
+                        <img src="/accueil/2.jpg" alt=""/>
+                        <h2>Jean Christophe LABEILLE à St Martin sur Lavezon</h2>
+                        <h4>Installé depuis 1994, M. Labeille élève avec passion ses bovins sur près de 100 hectares de
+                            prairies ardéchoises. Ses bêtes vivent en plein air toute l’année et sont nourries
+                            exclusivement avec les céréales cultivées sur l’exploitation, un mélange équilibré d’orge et
+                            de maïs, sans granulés. L’éleveur réalise l’engraissement à la ferme, garantissant ainsi une
+                            viande tracée, savoureuse et issue d’un élevage respectueux du bien-être animal. Fidèle
+                            partenaire de Thierry depuis plus de 15 ans, M. Labeille incarne les valeurs que nous
+                            défendons : qualité, transparence et production locale au service du goût.”</h4>
+                    </div>
+                    <div className="cards">
+                        <img src="/accueil/3.jpg" alt=""/>
+                        <h2>Famille SEVENIER à Saint-Pons</h2>
+                        <h4>À Saint-Pons, Cyril et Jérémy Sevenier dirigent le GAEC de la Selve depuis 2006. Ils élèvent
+                            40 vaches, 100 chèvres et des veaux sur 150 hectares. Le troupeau est nourri principalement
+                            au foin, dans un environnement respectueux. Leur plaisir : être au milieu des bêtes et
+                            constater qu’elles se sentent bien. Engagés auprès de Thierry depuis près de 30 ans, ils
+                            misent sur les circuits courts pour valoriser leur production et renforcer la confiance avec
+                            les consommateurs.“</h4>
+                    </div>
+                </div>
+            </section>
+
 
             <section id="location">
                 <div className="location">
