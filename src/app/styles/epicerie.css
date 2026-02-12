@@ -14,7 +14,7 @@
     animation-delay: 1000ms;
 }
 
-.image-grid {
+#epicerie .image-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(300px, 1fr));
     grid-auto-rows: 250px;
@@ -25,22 +25,22 @@
     justify-content: center;
 }
 
-.image-grid img {
+#epicerie .image-grid img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.image-grid .tall {
+#epicerie .image-grid .tall {
     grid-row: span 2;
 }
 
-.image-grid .wide {
+#epicerie .image-grid .wide {
     grid-column: span 2;
 }
 
-.image-grid .tall-wide {
+#epicerie .image-grid .tall-wide {
     grid-row: span 2;
     grid-column: span 2;
 }

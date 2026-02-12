@@ -202,27 +202,7 @@ nav #list li {
     text-align: left;
 }
 
-nav li:nth-child(1) {
-    margin-right: 15px;
-}
-
-nav li:nth-child(2) {
-    margin-right: 15px;
-}
-
-nav li:nth-child(3) {
-    margin-right: 15px;
-}
-
-nav li:nth-child(4) {
-    margin-right: 15px;
-}
-
-nav li:nth-child(5) {
-    margin-right: 15px;
-}
-
-nav li:nth-child(6) {
+nav #list li:not(:last-child) {
     margin-right: 15px;
 }
 
@@ -358,13 +338,11 @@ footer {
 @keyframes zoom {
     0% {
         filter: opacity(0%);
-        transform: scale(0%);
         transform: translate(0px, 0px);
     }
 
     50% {
         filter: opacity(100%);
-        transform: scale(100%);
         transform: translate(0px, -50px);
     }
 

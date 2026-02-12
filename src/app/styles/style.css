@@ -42,21 +42,21 @@
     animation-delay: 700ms;
 }
 
-.image-grid {
+#about .image-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr) 1fr;
     grid-template-rows: repeat(2, auto);
     gap: 10px;
 }
 
-.image-grid img {
+#about .image-grid img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     object-fit: cover;
 }
 
-.image-grid .carte-fidelite {
+#about .image-grid .carte-fidelite {
     grid-column: 3;
     grid-row: 1 / span 2;
     justify-self: center;
@@ -250,7 +250,7 @@
         width: 100%;
     }
 
-    .image-grid {
+    #about .image-grid {
         display: inherit;
     }
 

@@ -14,7 +14,7 @@
     animation-delay: 1000ms;
 }
 
-.image-grid {
+#creations .image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-auto-rows: 200px;
@@ -24,26 +24,26 @@
     max-width: 100%;
 }
 
-.image-grid img {
+#creations .image-grid img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.image-grid .tall {
+#creations .image-grid .tall {
     grid-row: span 3;
 }
 
-.image-grid .wide-2 {
+#creations .image-grid .wide-2 {
     grid-column: span 3;
 }
 
-.image-grid .wide {
+#creations .image-grid .wide {
     grid-column: span 2;
 }
 
-.image-grid .tall-wide {
+#creations .image-grid .tall-wide {
     grid-row: span 2;
     grid-column: span 2;
 }

@@ -1,78 +1,50 @@
-"use client";
+import Link from "next/link";
+import { navigationLinks } from "@/config/navigation";
+import { formatFrenchDateTime } from "@/lib/date";
+import { client } from "@/sanity/lib/client";
+import { bannerQuery } from "@/sanity/lib/queries";
 
-import { useEffect, useState } from 'react';
-import { client } from '../sanity/lib/client';
-import Link from 'next/link'; // Importation de Link
-
-// Définir une interface pour les données de la bannière
 interface BannerData {
-	text: string;
-	location: string;
-	eventDate: string;
+  text?: string;
+  location?: string;
+  eventDate?: string;
 }
 
-const Header = () => {
-	const [bannerData, setBannerData] = useState<BannerData | null>(null);
-	const [loading, setLoading] = useState(true);
-	const [isSticky, setIsSticky] = useState(false);
-
-	useEffect(() => {
-		const fetchBannerData = async () => {
-			const query = `*[_type == "banner"][0]`;
-			const data: BannerData = await client.fetch(query);
-			setBannerData(data);
-			setLoading(false);
-		};
-
-		fetchBannerData();
-
-		// Gérer le scroll pour rendre la navbar sticky
-		const handleScroll = () => {
-			if (window.scrollY > 0) {
-				setIsSticky(true);
-			} else {
-				setIsSticky(false);
-			}
-		};
-
-		window.addEventListener('scroll', handleScroll);
-
-		// Nettoyage de l'écouteur d'événements
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-		};
-	}, []);
-
-	const eventDate = bannerData ? new Date(bannerData.eventDate).toLocaleString() : null;
-
-	return (
-		<header>
-			<nav className={`nav ${isSticky ? 'sticky' : ''}`}>
-				<ul id="list">
-					<li><Link href="/">ACCUEIL</Link></li> {/* Remplacer <a> par <Link> */}
-					<li><Link href="/boucherie">BOUCHERIE</Link></li> {/* Remplacer <a> par <Link> */}
-					<li><Link href="/charcuterie">CHARCUTERIE</Link></li> {/* Remplacer <a> par <Link> */}
-					<li><Link href="/traiteur">TRAITEUR</Link></li> {/* Remplacer <a> par <Link> */}
-					<li><Link href="/epicerie">EPICERIE</Link></li> {/* Remplacer <a> par <Link> */}
-					<li><Link href="/creations">NOS CREATIONS</Link></li> {/* Remplacer <a> par <Link> */}
-					<li><Link href="/articles">ACTUALITES</Link></li> {/* Remplacer <a> par <Link> */}
-				</ul>
-			</nav>
-
-			{/* Message de chargement */}
-			{loading ? (
-				<p>Chargement de la bannière...</p>
-			) : (
-				bannerData && (
-					<div className="banner">
-						<h1>{bannerData.text}</h1>
-						<p>{bannerData.location}</p>
-						<p>{eventDate}</p>
-					</div>
-				)
-			)}
-		</header>
-	);
+async function getBannerData(): Promise<BannerData | null> {
+  try {
+    return await client.fetch<BannerData | null>(bannerQuery, {}, { next: { revalidate: 60 } });
+  } catch (error) {
+    console.error("Unable to fetch banner data", error);
+    return null;
+  }
 }
+
+const Header = async () => {
+  const bannerData = await getBannerData();
+  const eventDate = bannerData?.eventDate ? formatFrenchDateTime(bannerData.eventDate) : null;
+  const shouldShowBanner = Boolean(bannerData?.text || bannerData?.location || eventDate);
+
+  return (
+    <header>
+      <nav className="nav">
+        <ul id="list">
+          {navigationLinks.map((link) => (
+            <li key={link.href}>
+              <Link href={link.href}>{link.label}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      {shouldShowBanner ? (
+        <div className="banner">
+          {bannerData?.text ? <h1>{bannerData.text}</h1> : null}
+          {bannerData?.location ? <p>{bannerData.location}</p> : null}
+          {eventDate ? <p>{eventDate}</p> : null}
+        </div>
+      ) : null}
+    </header>
+  );
+};
 
 export default Header;
