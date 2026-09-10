@@ -36,3 +36,7 @@ est un déploiement.
   dans le code.
 - Jamais de secret dans le dépôt ; jamais de déploiement sans demande explicite.
 - Pas de README, pas de dossier de doc parallèle, pas de compte rendu daté.
+- **Une vérification d'interface se fait sur l'app réelle, par capture
+  d'écran** — simulateur ou appareil pour iOS, navigateur pour le web. Jamais
+  par une galerie ni un rendu nourri de fixtures : elles montrent ce qu'on
+  leur donne, pas l'app.
