@@ -17,3 +17,9 @@ Un site vitrine Sanity classique, tenu à jour par ses dépendances. La montée 
 ## 3. Sources
 
 `git log` et le contenu du dépôt, relevés le 7 septembre 2026.
+
+## Le dernier mouvement d'avant le SES (20 septembre 2026)
+
+Sorti d'ETAT le jour où le dépôt est entré dans la règle ; cinq entrées au plus y restent.
+
+- **5 → 11 janvier.** Section des éleveurs, images, responsive ; la carte de fidélité retirée.

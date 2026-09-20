@@ -1,0 +1,15 @@
+# Un lot par semaine, groupé, pour que les mises à jour se lisent d'un coup.
+# Adapter l'écosystème : npm, swift, gradle, maven, composer.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      dependances:
+        patterns: ["*"]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
