@@ -39,3 +39,6 @@ next-env.d.ts
 
 # intellijidea
 /.idea
+
+# environnement : les noms sont dans docs/VARIABLES.md
+.env*
