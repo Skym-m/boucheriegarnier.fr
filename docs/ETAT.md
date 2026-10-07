@@ -1,14 +1,14 @@
 # Maison Garnier — où on en est
 
-État du **7 septembre 2026**, relevé dans le dépôt. Cinq entrées de dernier mouvement au plus.
+État du **7 octobre 2026**, relevé dans le dépôt. Cinq entrées de dernier mouvement au plus.
 
 ## Dernier mouvement
 
+- **7 octobre.** npm cède la place à pnpm (`packageManager`, `pnpm-lock.yaml`, `pnpm-workspace.yaml` qui porte les overrides et autorise le build d'esbuild) ; `@portabletext/react` et `@portabletext/types`, importés sans être déclarés, entrent au `package.json`.
 - **20 septembre.** Le dépôt entre dans le SES : le bloc commun v1, `ses.json` (plafond de secours 1), VARIABLES, LIVRAISON, et le relevé du jour dans PLANIFIE.
 - **7 septembre.** La doc suit le modèle en trois temps.
 - **3 septembre.** Sanity monté de 4 à 6, next-sanity de 11 à 13, `src/sanity/lib/image.ts` adapté à la nouvelle API d'image ; overrides de sécurité supprimés.
 - **20 août.** Dépendances à jour.
-- **12 février.** Pages refaites, requêtes Sanity et utilitaire de dates.
 
 ## 1. Les machines et les environnements
 

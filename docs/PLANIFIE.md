@@ -25,7 +25,6 @@ les attentes communes, la capture d'écran, les surfaces) sont à retirer.
 - [ ] SHOULD `ignore` — .gitignore ne couvre pas .env → une ligne `.env*`
 - [ ] SHOULD `dependabot` — package.json sans .github/dependabot.yml → un lot par semaine, groupé
 - [ ] SHOULD `controle` — package.json sans script lint, typecheck, test → un contrôle unique (`check`) qui les enchaîne
-- [ ] SHOULD `controle` — package-lock.json : npm → pnpm partout
 - [ ] SHOULD `controle` — .nvmrc absent → une version de Node épinglée par dépôt
 - [ ] MUST `copie` — sanity.config.ts ≈ admilaeti.com (100 %) → monter dans le paquet partagé, ou supprimer l'une des deux copies
 - [ ] MUST `copie` — sanity.config.ts ≈ skymdev.fr (100 %) → monter dans le paquet partagé, ou supprimer l'une des deux copies

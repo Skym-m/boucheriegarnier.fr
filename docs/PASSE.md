@@ -23,3 +23,4 @@ Un site vitrine Sanity classique, tenu à jour par ses dépendances. La montée 
 Sorti d'ETAT le jour où le dépôt est entré dans la règle ; cinq entrées au plus y restent.
 
 - **5 → 11 janvier.** Section des éleveurs, images, responsive ; la carte de fidélité retirée.
+- **12 février.** Pages refaites, requêtes Sanity et utilitaire de dates.
