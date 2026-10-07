@@ -155,4 +155,29 @@ STRUCTURE, NOMS, PARTAGE, SECOURS, TESTS, INTERFACE, DOCUMENTATION,
 EXCEPTIONS. Une session qui touche à un domaine lit son chapitre d'abord.
 `ses verifier` contrôle ce bloc, les fichiers de la section 1 et les plafonds ;
 `ses adopter` les pose et les remet à jour.
+
+### 10. L'avancement
+
+JARVIS suit chaque session de développement depuis son bureau : il relit en
+silence la fin des transcripts. Rien d'autre n'est demandé aux agents que ceci.
+
+- Une tâche de plus d'une étape s'annonce par un plan numéroté au début
+  (« 1. … 2. … 3. … ») ; le passage à l'étape suivante se dit en clair
+  (« étape 3 sur 5 : … »). Aucune ligne de temps, aucune balise pour JARVIS :
+  il en tire lui-même l'avancement et le temps restant.
+- Un blocage se dit en une phrase qui commence par « Bloqué : » et nomme ce
+  qu'on attend.
+- `docs/PLANIFIE.md` commence par la feuille de route, entre
+  `<!-- feuille-de-route -->` et `<!-- /feuille-de-route -->`, dans ce format,
+  et se met à jour à chaque jalon atteint, pas seulement en fin de session :
+
+```
+Jalon : <nom> — <fait le JJ/MM | en cours | à venir>
+- [x] <partie> — <fait le JJ/MM>
+- [~] <partie> — <NN %> — <ce qui reste>
+- [!] <partie> — attend : <ce qu'on attend>
+- [ ] <partie> — <quand>
+Prochaine étape : <une phrase>
+À trancher : <la question> — sans réponse : <ce qui se fait par défaut>
+```
 <!-- /ses -->
