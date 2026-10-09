@@ -41,7 +41,7 @@ est un déploiement.
   par une galerie ni un rendu nourri de fixtures : elles montrent ce qu'on
   leur donne, pas l'app.
 
-<!-- ses v1 · site -->
+<!-- ses v2 · site -->
 ## La règle commune
 
 Ce qui suit vaut pour tous les dépôts de SkymDev et c'est le même texte
@@ -121,9 +121,10 @@ des surfaces touchées.
 - « Fini » veut dire : les contrôles de la famille du dépôt passent (chapitre
   TESTS). Un contrôle sauté se nomme.
 - **Une vérification d'interface se fait sur l'app réelle, par capture
-  d'écran** — simulateur pour iOS, navigateur pour le web — et la capture est
-  jointe. Une page touchée sans capture n'est pas finie. L'agent peut installer
-  sur l'iPhone du fondateur ; le fondateur vérifie sur l'appareil.
+  d'écran** — l'iPhone du fondateur pour iOS, navigateur pour le web — et la
+  capture est jointe. Une page touchée sans capture n'est pas finie. L'agent
+  installe sur l'iPhone ; le fondateur vérifie sur l'appareil. Aucun
+  simulateur ni runtime de simulateur ne s'installe sur le poste.
 - « Corrigé » sans preuve nommée — la sortie d'une commande, une capture, le
   message reçu — n'existe pas.
 - Un test mesure une exigence : il exécute le code, il ne le lit pas ; il parle
@@ -180,4 +181,34 @@ Jalon : <nom> — <fait le JJ/MM | en cours | à venir>
 Prochaine étape : <une phrase>
 À trancher : <la question> — sans réponse : <ce qui se fait par défaut>
 ```
+
+### 11. Le disque
+
+Le Mac a été plein deux fois en un mois : 600 Go de builds, de copies et de
+téléchargements laissés par les sessions. Une session laisse le poste comme
+elle l'a trouvé.
+
+- Ce qu'une session produit pour elle-même — build, DerivedData, capture,
+  journal, essai, copie de travail — va dans son dossier temporaire ou dans le
+  `tmp/` ignoré du dépôt, et elle le supprime avant de finir (ce qu'elle a
+  créé elle-même : la section 7 ne vise pas ça). Jamais dans `~`, `Documents`,
+  `Téléchargements`, le Bureau, ni dans un `dist/` qui n'est pas un livrable.
+  Un script qui écrit dans un dossier temporaire le vide en sortant, même en
+  échec.
+- Xcode compile dans son DerivedData par défaut. Un `-derivedDataPath` à part
+  est jetable et disparaît à la fin de la session.
+- Pas de clone ni de worktree en plus sans le dire dans le plan ; un worktree
+  disparaît quand sa branche est fusionnée ou abandonnée.
+- Un modèle, un jeu de données, un outil ou un runtime existe en un seul
+  exemplaire sur le poste et sur le disque externe : chercher avant de
+  télécharger, et noter dans `docs/ETAT.md` où il vit. Pas de nouvelle
+  version d'un outil à côté de l'ancienne : on remplace.
+- Une sauvegarde de base se prend avant une opération risquée, jamais par
+  habitude ; une fois l'opération validée, on ne garde que la dernière, et
+  elle part sur le disque externe.
+- Un chemin absolu ou un lien vers un autre disque ne s'écrit pas dans un
+  script : il casse au premier rangement. Déplacer un dossier qu'un script
+  utilise, c'est mettre le script à jour dans le même geste.
+- La fin de session dit ce qui a été laissé hors du dépôt, et sa taille.
+  « Rien » est la bonne réponse.
 <!-- /ses -->
