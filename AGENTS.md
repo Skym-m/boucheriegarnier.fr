@@ -41,7 +41,7 @@ est un déploiement.
   par une galerie ni un rendu nourri de fixtures : elles montrent ce qu'on
   leur donne, pas l'app.
 
-<!-- ses v2 · site -->
+<!-- ses v3 · site -->
 ## La règle commune
 
 Ce qui suit vaut pour tous les dépôts de SkymDev et c'est le même texte
@@ -211,4 +211,42 @@ elle l'a trouvé.
   utilise, c'est mettre le script à jour dans le même geste.
 - La fin de session dit ce qui a été laissé hors du dépôt, et sa taille.
   « Rien » est la bonne réponse.
+
+### 12. Les variables
+
+- Un nom dit la chose, pas le produit : `ACCOUNT_PROVISIONING_HMAC_KEY`, pas
+  `SATURN_CLIENT_MUTATION_HMAC_KEY`. Le nom d'un produit n'ouvre une variable
+  que pour en désigner un autre, devant le nom que cet autre emploie chez lui :
+  `PLATFORM_KEY` dans Saturn est `SATURN_PLATFORM_KEY` chez qui l'appelle.
+- Trois préfixes permis, aucun autre : `SKYM_` pour ce que pose l'outillage
+  commun (`SKYM_BUILD_*`, `SKYM_PACKAGES_TOKEN`) ; le nom du produit pour un
+  réglage Xcode, qui partage l'espace d'Apple (`SATURN_API_URL`) ; `JARVIS_`
+  dans le `.env` du daemon.
+- Le nom qu'attend un fournisseur ou une plateforme se garde tel quel :
+  `CRON_SECRET`, `DATABASE_URL`, `SENTRY_AUTH_TOKEN`, `SENTRY_PROJECT`,
+  `STRIPE_SECRET_KEY`, `RESEND_API_KEY`, `BLOB_READ_WRITE_TOKEN`. Sinon : le
+  fournisseur, puis la chose (`SUPABASE_SECRET_KEY`, `APNS_KEY_ID`).
+- Les fins de nom sont fermées et les synonymes tranchés : le dictionnaire est
+  dans NOMS. `_URL`, jamais `_BASE_URL` ; `_PUBLISHABLE_KEY`, jamais
+  `_ANON_KEY` ; `X_ENABLED`, jamais `ENABLE_X`.
+- `NEXT_PUBLIC_` et `VITE_` ne portent que ce que le navigateur lit, jamais un
+  secret. Une valeur publique a un seul nom : le serveur lit aussi le
+  `NEXT_PUBLIC_`. Elle se pose en clair, pour se relire au diagnostic ; un
+  secret, et une adresse personnelle, se posent `sensitive`.
+- Une valeur, une entrée. Identique en Production, Preview et Development :
+  une seule entrée qui vise les trois. Différente : une entrée par
+  environnement, et `VARIABLES.md` dit pourquoi. Pas de surcharge par branche
+  que `VARIABLES.md` ne nomme pas, avec sa raison.
+- La vérité est dans `docs/VARIABLES.md` et chez l'hébergeur, nulle part
+  ailleurs. Ce que la plateforme pose (`VERCEL_*`, `NODE_ENV`) ne se pose pas.
+  Une variable que le code ne lit plus quitte le code, le tableau et
+  l'hébergeur dans le même geste ; une intégration qui pose ce que personne ne
+  lit se débranche. Un fichier tiré par `vercel env pull` se supprime après
+  usage : il porte des secrets en clair.
+- Sur GitHub Actions, le même nom que sur Vercel : une valeur publique en
+  variable (`vars.`), un secret en secret (`secrets.`).
+- Renommer se fait en trois temps, jamais dans l'autre ordre : poser le
+  nouveau nom à côté de l'ancien, déployer le code qui ne lit que le nouveau,
+  retirer l'ancien. Un secret qu'on ne retrouve nulle part se fait tourner,
+  pas recopier.
 <!-- /ses -->
