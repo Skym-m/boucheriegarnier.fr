@@ -14,14 +14,14 @@ l'état met ces trois fichiers à jour ; elle n'ouvre pas de bilan daté ailleur
 | Le site | `src/app` | Accueil, boucherie, charcuterie, traiteur, épicerie, créations, articles et leur fiche, studio |
 | Le contenu | `src/sanity`, `/studio` | Schémas et requêtes Sanity, utilitaire de dates |
 
-Stack : Next 16, Sanity 6 et next-sanity 13 (montés le 3 septembre 2026), npm.
+Stack : Next 16, Sanity 6 et next-sanity 13 (montés le 3 septembre 2026), pnpm (version épinglée par `packageManager`).
 
 ## Développement
 
 ```bash
-npm install
-npm run dev
-npm run build
+pnpm install
+pnpm dev
+pnpm build
 ```
 
 Le déploiement est le geste du fondateur ; sur un site Vercel branché sur `main`, un push
