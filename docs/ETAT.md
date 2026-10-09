@@ -1,14 +1,14 @@
 # Maison Garnier — où on en est
 
-État du **7 octobre 2026**, relevé dans le dépôt. Cinq entrées de dernier mouvement au plus.
+État du **9 octobre 2026**, relevé dans le dépôt. Cinq entrées de dernier mouvement au plus.
 
 ## Dernier mouvement
 
+- **9 octobre.** Lot Dependabot repris sous pnpm : Next 16.4, React 19.3, Sanity et @sanity/vision 6.18, @types/node 26, TypeScript 7 (le compilateur natif ; le contrôle de types de `next build` le prend et attrape bien une erreur).
 - **7 octobre.** npm cède la place à pnpm (`packageManager`, `pnpm-lock.yaml`, `pnpm-workspace.yaml` qui porte les overrides et autorise le build d'esbuild) ; `@portabletext/react` et `@portabletext/types`, importés sans être déclarés, entrent au `package.json`.
 - **20 septembre.** Le dépôt entre dans le SES : le bloc commun v1, `ses.json` (plafond de secours 1), VARIABLES, LIVRAISON, et le relevé du jour dans PLANIFIE.
 - **7 septembre.** La doc suit le modèle en trois temps.
 - **3 septembre.** Sanity monté de 4 à 6, next-sanity de 11 à 13, `src/sanity/lib/image.ts` adapté à la nouvelle API d'image ; overrides de sécurité supprimés.
-- **20 août.** Dépendances à jour.
 
 ## 1. Les machines et les environnements
 

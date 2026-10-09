@@ -7,7 +7,7 @@
 | 30 septembre 2024 | Le site naît. |
 | Décembre 2025 | Nettoyage, README et lockfile retirés, correctif React Server Components. |
 | Janvier → février 2026 | Éleveurs, images, responsive ; pages refaites sur Sanity. |
-| Août → septembre 2026 | Dépendances : Sanity 4 → 6, next-sanity 11 → 13, overrides supprimés. |
+| Août → septembre 2026 | Dépendances à jour le 20 août ; Sanity 4 → 6, next-sanity 11 → 13, overrides supprimés. |
 | 7 septembre | La doc en trois temps. |
 
 ## 2. En quelques lignes
