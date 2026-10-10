@@ -41,7 +41,7 @@ est un déploiement.
   par une galerie ni un rendu nourri de fixtures : elles montrent ce qu'on
   leur donne, pas l'app.
 
-<!-- ses v3 · site -->
+<!-- ses v5 · site -->
 ## La règle commune
 
 Ce qui suit vaut pour tous les dépôts de SkymDev et c'est le même texte
@@ -103,6 +103,13 @@ sigle de lot ni une date.
   été essayé et ce que ça prouve, on demande. Pas de troisième.
 - Pas de dépendance nouvelle, pas de valeur de secours nouvelle, pas de copie
   d'un autre dépôt sans l'avoir dit dans le plan et obtenu le oui.
+- Ce qui peut se faire maintenant se fait maintenant : pas d'échéance de
+  calendrier pour repousser un nettoyage. Une transition qui attend vraiment
+  quelque chose — un ancien domaine encore servi aux apps installées, un ancien
+  nom de variable encore lu, un pont vers une ancienne version, une valeur de
+  secours « le temps de » — entre dans `docs/PLANIFIE.md` le jour où elle naît,
+  avec l'événement qui la retire (« à la mise à jour App Store », « dès le
+  domaine déplacé ») et le geste. Une transition sans événement est une faute.
 - Une réponse tient en dix lignes ; on parle en effets, pas en mécanique. La
   fin de session tient en quatre : ce qui change, ce que ça répare, comment
   c'est prouvé, ce qui n'a pas été vérifié.
@@ -124,7 +131,8 @@ des surfaces touchées.
   d'écran** — l'iPhone du fondateur pour iOS, navigateur pour le web — et la
   capture est jointe. Une page touchée sans capture n'est pas finie. L'agent
   installe sur l'iPhone ; le fondateur vérifie sur l'appareil. Aucun
-  simulateur ni runtime de simulateur ne s'installe sur le poste.
+  simulateur ni runtime de simulateur ne s'installe sur le poste. Une app
+  se publie directement par App Store Connect, sans TestFlight.
 - « Corrigé » sans preuve nommée — la sortie d'une commande, une capture, le
   message reçu — n'existe pas.
 - Un test mesure une exigence : il exécute le code, il ne le lit pas ; il parle
