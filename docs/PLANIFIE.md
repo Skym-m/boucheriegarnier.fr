@@ -20,7 +20,7 @@ sans le oui du fondateur ; on les passe une à une et on abaisse le plafond.
 Les paragraphes d'`AGENTS.md` que le bloc porte désormais (les trois temps,
 les attentes communes, la capture d'écran, les surfaces) sont à retirer.
 
-- [ ] SHOULD `secrets` — .env.local est suivi par git (2 variables, toutes publiques) → les noms vont dans VARIABLES.md ; git rm --cached, et .gitignore
+- [x] SHOULD `secrets` — .env.local est suivi par git (2 variables, toutes publiques) → les noms vont dans VARIABLES.md ; git rm --cached, et .gitignore
 - [ ] MUST `secours` — 1 valeurs de secours et aucun plafond → inscrire { "plafonds": { "secours": 1 } } dans ses.json et le compte dans PLANIFIE ; aucune nouvelle sans le oui du fondateur
 - [ ] SHOULD `ignore` — .gitignore ne couvre pas .env → une ligne `.env*`
 - [ ] SHOULD `dependabot` — package.json sans .github/dependabot.yml → un lot par semaine, groupé
